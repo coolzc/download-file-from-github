@@ -10,7 +10,8 @@ if __name__ == '__main__':
             response = requests.get(url)
             file.write(response.content)
 
-    target = ''
+    #target = ''
+    target = 'https://github.com/QSCTech/zju-icicles/tree/master/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E8%AF%95%E5%8D%B7'
     req = requests.get(url=target)
     html = req.text
     bf = BeautifulSoup(html)
