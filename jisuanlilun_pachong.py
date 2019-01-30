@@ -11,7 +11,7 @@ if __name__ == '__main__':
             file.write(response.content)
 
     #target = ''
-    target = 'https://github.com/QSCTech/zju-icicles/tree/master/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E8%AF%95%E5%8D%B7'
+    target = 'https://github.com/QSCTech/zju-icicles/tree/master/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E4%BD%9C%E4%B8%9A'
     req = requests.get(url=target)
     html = req.text
     bf = BeautifulSoup(html)
@@ -25,5 +25,5 @@ if __name__ == '__main__':
             file_name = urllib.parse.unquote(download_url.split("/")[-1])
             download(download_url, file_name)
             count += 1
-            print(count + 'files done')
+            print(str(count) + ' ' + file_name + ' is downloaded')
             urls.append(download_url)
