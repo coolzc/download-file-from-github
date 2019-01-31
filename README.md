@@ -7,3 +7,8 @@
 ```python
 target = 'your url'
 ```
+
+#### Need to improve
+1. support async task to download files
+2. support to download files in multi directories 
+3. support to download files to specific path and url designated by terminal input
